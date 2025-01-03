@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,10 +21,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ar">
+      <head>
+        <title>عيادات التجميل</title>
+        <meta name="description" content="موقع عيادات التجميل" />
+        <meta name="keywords" content="تجميل, حقن الفيلر, شد الوجه, التجميل بالليزر, تقشير البشرة, علاج حب الشباب, تبييض الأسنان" />
+        <meta name="author" content="عيادات التجميل" />
+        <link rel="icon" href="/favicon.ico" />
+      </head>
+
+    
       <body
+      
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+          <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
