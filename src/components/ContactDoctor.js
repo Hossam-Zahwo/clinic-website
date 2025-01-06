@@ -1,11 +1,11 @@
-export default function ContactDoctor(){
+export default function ContactDoctor() {
     const borderStyle = {
-  border: "5px solid transparent",
-  borderRadius: "10px",
-  backgroundImage: "linear-gradient(90deg, #c084fc, #f472b6)",
-  backgroundClip: "padding-box",
+        border: "5px solid transparent",
+        borderRadius: "10px",
+        backgroundImage: "linear-gradient(90deg, #c084fc, #f472b6)",
+        backgroundClip: "padding-box",
     }
-    return(
+    return (
         <section className="pt-[40px] pb-[40px] bg-slate-200">
             <div className="w-[60%] m-auto mb-[20px] max-[991px]:w-[100%] text-center">
                 <h2 className="text-[35px] mb-[8px]"> احجز موعدك اليوم </h2>
@@ -15,45 +15,45 @@ export default function ContactDoctor(){
                 <form className="text-center w-[50%] max-[991px]:w-full">
 
                     <div className="flex gap-[1.5rem] pr-[10px] pl-[10px] max-[991px]:flex-col">
-                      <div className="w-[50%] max-[991px]:w-full mb-[15px]">
-                          <label className="block text-right mb-[4px] text-[18px]"> الأسم </label>
-                          <input className="text-right w-full text-[17px] p-[8px] border-blue-400 border-[2px] rounded-[6px] outline-none transition-all focus:border-blue-300" type="text" placeholder=" أدخل اسمك الكامل "/>
-                      </div>
-                      <div className="w-[50%] max-[991px]:w-full mb-[15px]">
-                          <label className="block text-right mb-[4px] text-[18px]"> البريد الإلكتروني </label>
-                          <input className="text-right w-full text-[17px] p-[10px] border-blue-400 border-[2px] rounded-[6px] outline-none transition-all focus:border-blue-300" type="email" placeholder=" أدخل بريد الإلكتروني "/>
-                      </div>
+                        <div className="w-[50%] max-[991px]:w-full mb-[15px]">
+                            <label className="block text-right mb-[4px] text-[18px]"> الأسم </label>
+                            <input className="text-right w-full text-[17px] p-[8px] border-blue-400 border-[2px] rounded-[6px] outline-none transition-all focus:border-blue-300" type="text" placeholder=" أدخل اسمك الكامل " />
+                        </div>
+                        <div className="w-[50%] max-[991px]:w-full mb-[15px]">
+                            <label className="block text-right mb-[4px] text-[18px]"> البريد الإلكتروني </label>
+                            <input className="text-right w-full text-[17px] p-[10px] border-blue-400 border-[2px] rounded-[6px] outline-none transition-all focus:border-blue-300" type="email" placeholder=" أدخل بريد الإلكتروني " />
+                        </div>
                     </div>
 
                     <div className="flex gap-[1.5rem] pr-[10px] pl-[10px] max-[991px]:flex-col">
-                      <div className="w-[50%] max-[991px]:w-full mb-[15px]">
-                          <label className="block text-right mb-[4px] text-[18px]"> رقم الهاتف </label>
-                          <input className="text-right w-full text-[17px] p-[8px] border-blue-400 border-[2px] rounded-[6px] outline-none transition-all focus:border-blue-300" type="text" placeholder=" أدخل رقم الهاتف  "/>
-                      </div>
-                      <div className="w-[50%] max-[991px]:w-full mb-[15px]">
-                           <label className="block text-right mb-[4px] text-[18px]"> الخدمة </label>
-                          <select className="text-right w-full text-[17px] p-[10px] border-blue-400 border-[2px] rounded-[6px] outline-none transition-all focus:border-blue-300">
-                            <option value=" جراحة عامة "> جراحة عامة </option>
-                            <option value=" تجميل "> تجميل </option>
-                            <option value=" عيون "> عيون </option>
-                          </select>
-                      </div>
+                        <div className="w-[50%] max-[991px]:w-full mb-[15px]">
+                            <label className="block text-right mb-[4px] text-[18px]"> رقم الهاتف </label>
+                            <input className="text-right w-full text-[17px] p-[8px] border-blue-400 border-[2px] rounded-[6px] outline-none transition-all focus:border-blue-300" type="text" placeholder=" أدخل رقم الهاتف  " />
+                        </div>
+                        <div className="w-[50%] max-[991px]:w-full mb-[15px]">
+                            <label className="block text-right mb-[4px] text-[18px]"> الخدمة </label>
+                            <select className="text-right w-full text-[17px] p-[10px] border-blue-400 border-[2px] rounded-[6px] outline-none transition-all focus:border-blue-300">
+                                <option value=" جراحة عامة "> جراحة عامة </option>
+                                <option value=" تجميل "> تجميل </option>
+                                <option value=" عيون "> عيون </option>
+                            </select>
+                        </div>
                     </div>
 
 
                     <div className="flex gap-[1.5rem] pr-[10px] pl-[10px] max-[991px]:flex-col">
-                      <div className="w-[50%] max-[991px]:w-full mb-[15px]">
-                          <label className="block text-right mb-[4px] text-[18px]"> تاريخ الكشف </label>
-                          <input  className="text-right w-full text-[17px] p-[8px] border-blue-400 border-[2px] rounded-[6px] outline-none transition-all focus:border-blue-300" type="text" placeholder=" أدخل رقم الهاتف  "/>
-                      </div>
-                      <div className="w-[50%] max-[991px]:w-full mb-[15px]">
-                           <label className="block text-right mb-[4px] text-[18px]"> الوقت </label>
-                          <select className="text-right w-full text-[17px] p-[10px] border-blue-400 border-[2px] rounded-[6px] outline-none transition-all focus:border-blue-300" >
-                            <option value=" 10:00AM "> 10:00AM </option>
-                            <option value=" 12:00AM "> 12:00AM </option>
-                            <option value=" 9:00PM "> 9:00PM </option>
-                          </select>
-                      </div>
+                        <div className="w-[50%] max-[991px]:w-full mb-[15px]">
+                            <label className="block text-right mb-[4px] text-[18px]"> تاريخ الكشف </label>
+                            <input className="text-right w-full text-[17px] p-[8px] border-blue-400 border-[2px] rounded-[6px] outline-none transition-all focus:border-blue-300" type="text" placeholder=" أدخل رقم الهاتف  " />
+                        </div>
+                        <div className="w-[50%] max-[991px]:w-full mb-[15px]">
+                            <label className="block text-right mb-[4px] text-[18px]"> الوقت </label>
+                            <select className="text-right w-full text-[17px] p-[10px] border-blue-400 border-[2px] rounded-[6px] outline-none transition-all focus:border-blue-300" >
+                                <option value=" 10:00AM "> 10:00AM </option>
+                                <option value=" 12:00AM "> 12:00AM </option>
+                                <option value=" 9:00PM "> 9:00PM </option>
+                            </select>
+                        </div>
                     </div>
 
                     <div className="w-[100%] mb-[15px] pr-[10px] pl-[10px]">

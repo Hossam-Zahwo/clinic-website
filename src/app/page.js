@@ -104,7 +104,7 @@ export default function Home() {
           })}
         </div>
       </section>
-       <ContacDoctor />
+      <ContacDoctor />
     </div>
   );
 }
