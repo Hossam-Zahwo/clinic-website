@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 import ServiceCard from '../components/ServiceCard';
+import ContacDoctor from "../components/ContactDoctor";
 
 
 function getRandomColor() { const letters = '0123456789ABCDEF'; let color = '#'; for (let i = 0; i < 6; i++) { color += letters[Math.floor(Math.random() * 16)]; } return color; }
@@ -103,9 +104,7 @@ export default function Home() {
           })}
         </div>
       </section>
-
-
-    
+       <ContacDoctor />
     </div>
   );
 }
