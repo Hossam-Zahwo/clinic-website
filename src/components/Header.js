@@ -11,10 +11,10 @@ export default function Header() {
       dir="rtl"
     >
       {/* اللوجو */}
-      <div className="flex justify-center items-center ">
+      <div className="flex justify-center items-center">
         <Image 
           src="/clinic-high-resolution-logo-transparent.svg" 
-          alt="Logo" 
+          alt="عيادة التجميل"  // Improved alt text
           loading="lazy" 
           width={250} 
           height={50} 
@@ -25,10 +25,10 @@ export default function Header() {
       {/* القائمة في الشاشات الكبيرة */}
       <nav className="hidden md:flex flex-1 justify-center text-center">
         <ul className="flex justify-center gap-8">
-          <li><a href="#contact" className="hover:text-purple-600 font-bold">اتصل بنا</a></li>
-          <li><a href="#about" className="hover:text-purple-600 font-bold">من نحن</a></li>
-          <li><a href="#services" className="hover:text-purple-600 font-bold">الخدمات</a></li>
-          <li><a href="#" className="hover:text-purple-600 font-bold">عيادات التجميل</a></li>
+          <li><a href="/contact" className="hover:text-purple-600 font-bold">اتصل بنا</a></li>
+          <li><a href="/about" className="hover:text-purple-600 font-bold">من نحن</a></li>
+          <li><a href="/services" className="hover:text-purple-600 font-bold">الخدمات</a></li>
+          <li><a href="/" className="hover:text-purple-600 font-bold">عيادات التجميل</a></li>
         </ul>
       </nav>
 
@@ -57,6 +57,8 @@ export default function Header() {
         <button 
           onClick={() => setMenuOpen(!menuOpen)} 
           className="bg-gradient-to-r from-purple-400 to-pink-400 text-white py-2 px-4 rounded-full font-semibold shadow-md hover:opacity-80 transition flex items-center gap-2"
+          aria-label="Toggle navigation menu"  // Accessibility improvement
+          aria-expanded={menuOpen}  // Added aria-expanded
         >
           <span>القائمة</span>
           <svg 
@@ -80,10 +82,10 @@ export default function Header() {
       {menuOpen && (
         <div className="absolute top-16 left-0 bg-gray-200 rounded-lg shadow-lg w-60 p-4 flex flex-col gap-4 md:hidden">
           <ul className="flex flex-col gap-4">
-            <li><a href="#contact" className="hover:text-purple-600 font-bold">اتصل بنا</a></li>
-            <li><a href="#about" className="hover:text-purple-600 font-bold">من نحن</a></li>
-            <li><a href="#services" className="hover:text-purple-600 font-bold">الخدمات</a></li>
-            <li><a href="#" className="hover:text-purple-600 font-bold">عيادات التجميل</a></li>
+            <li><a href="/contact" className="hover:text-purple-600 font-bold">اتصل بنا</a></li>
+            <li><a href="/about" className="hover:text-purple-600 font-bold">من نحن</a></li>
+            <li><a href="/services" className="hover:text-purple-600 font-bold">الخدمات</a></li>
+            <li><a href="/" className="hover:text-purple-600 font-bold">عيادات التجميل</a></li>
           </ul>
           <button className="bg-gradient-to-r from-purple-400 to-pink-400 text-white py-2 px-6 rounded-full font-semibold flex justify-between items-center gap-3 shadow-md hover:opacity-80 transition">
             <span>احجز الآن</span>
