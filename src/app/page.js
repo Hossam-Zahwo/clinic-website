@@ -1,7 +1,10 @@
+"use client"
+import { useState } from "react";
 import ContactDoctor from "../components/ContactDoctor";
 import ServiceCard from "../components/ServiceCard";
 import Image from "next/image";
 import Head from "next/head";
+import InfoData from "../app/services/InfoData"
 
 // Mock services data
 const services =  [
@@ -45,10 +48,24 @@ const services =  [
 
 
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [currentData, setCurrentData] = useState([]);
+  
+  
+  const handleOpenPopup  = (items) => {
+    setCurrentData(items);
+    setIsOpen(true)
+  }
+  
+  const handleClosePopup = () => {
+    setCurrentData(null);
+    setIsOpen(false)
+  }
   const getRandomColor = () => {
     const colors = ["#FF5733", "#33FF57", "#3357FF", "#F333FF", "#33FFF5"];
     return colors[Math.floor(Math.random() * colors.length)];
   };
+ 
 
   return (
     <>
@@ -147,9 +164,16 @@ export default function Home() {
                   description={service.description}
                   imag={service.imag}
                   gradient={gradient}
+                  info={service}
+                  handleOpenPopup={handleOpenPopup} 
                 />
               );
             })}
+            <InfoData 
+            isOpen={isOpen} 
+            data={currentData} 
+            onClose={handleClosePopup}
+            />
           </div>
         </section>
 
