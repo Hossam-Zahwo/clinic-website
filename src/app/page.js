@@ -68,14 +68,9 @@ export default function Home() {
  
 
   return (
-    <>
-      {/* SEO and Meta Tags */}
-      <Head>
-        <title>عيادات التجميل - الخدمات التجميلية</title>
-        <meta name="description" content="مرحبًا بكم في عيادات التجميل. نقدم أفضل الخدمات التجميلية من متخصصين ذوي خبرة." />
-      </Head>
-
-      {/* Main Content */}
+  
+  
+      
       <main className="text-black">
         {/* Hero Section */}
         <section className="text-center py-5 grid grid-cols-1 md:grid-cols-2 px-4 md:px-10 gap-5">
@@ -180,6 +175,6 @@ export default function Home() {
         {/* Contact Section */}
         <ContactDoctor />
       </main>
-    </>
+  
   );
 }

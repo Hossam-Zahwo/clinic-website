@@ -1,4 +1,3 @@
-
 "use client"
 import Image from 'next/image';
 import { useState } from 'react';
@@ -28,7 +27,7 @@ export default function ContactDoctor() {
   return (
     <section className="pt-10 pb-10 bg-slate-200">
       <div className="w-[60%] m-auto mb-5 max-w-full text-center">
-        <h2 className="text-3xl mb-2">احجز موعدك اليوم</h2>
+        <h2 className="text-3xl mb-2 bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text">احجز موعدك اليوم</h2>
         <p className="text-lg">
           املأ النموذج لتحديد موعد زيارتك لفريق الخبراء لدينا. نحن هنا لمساعدتك على البقاء بصحة جيدة.
         </p>
@@ -43,7 +42,8 @@ export default function ContactDoctor() {
             <div className="w-[50%] max-[991px]:w-full mb-4">
               <label className="block text-right mb-1 text-lg">الاسم</label>
               <input
-                className="text-right w-full text-base p-2 border-blue-400 border-2 rounded-md outline-none transition-all focus:border-blue-300"
+                className="text-right w-full text-base p-2 border-2 rounded-md outline-none transition-all focus:border-transparent focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50"
+                style={{ borderImage: 'linear-gradient(to right, purple-400, pink-400) 1' }}
                 type="text"
                 name="name"
                 value={formData.name}
@@ -54,7 +54,8 @@ export default function ContactDoctor() {
             <div className="w-[50%] max-[991px]:w-full mb-4">
               <label className="block text-right mb-1 text-lg">البريد الإلكتروني</label>
               <input
-                className="text-right w-full text-base p-2 border-blue-400 border-2 rounded-md outline-none transition-all focus:border-blue-300"
+                className="text-right w-full text-base p-2 border-2 rounded-md outline-none transition-all focus:border-transparent focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50"
+                style={{ borderImage: 'linear-gradient(to right, purple-400, pink-400) 1' }}
                 type="email"
                 name="email"
                 value={formData.email}
@@ -68,7 +69,8 @@ export default function ContactDoctor() {
             <div className="w-[50%] max-[991px]:w-full mb-4">
               <label className="block text-right mb-1 text-lg">رقم الهاتف</label>
               <input
-                className="text-right w-full text-base p-2 border-blue-400 border-2 rounded-md outline-none transition-all focus:border-blue-300"
+                className="text-right w-full text-base p-2 border-2 rounded-md outline-none transition-all focus:border-transparent focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50"
+                style={{ borderImage: 'linear-gradient(to right, purple-400, pink-400) 1' }}
                 type="text"
                 name="phone"
                 value={formData.phone}
@@ -79,7 +81,8 @@ export default function ContactDoctor() {
             <div className="w-[50%] max-[991px]:w-full mb-4">
               <label className="block text-right mb-1 text-lg">الخدمة</label>
               <select
-                className="text-right w-full text-base p-2 border-blue-400 border-2 rounded-md outline-none transition-all focus:border-blue-300"
+                className="text-right w-full text-base p-2 border-2 rounded-md outline-none transition-all focus:border-transparent focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50"
+                style={{ borderImage: 'linear-gradient(to right, purple-400, pink-400) 1' }}
                 name="service"
                 value={formData.service}
                 onChange={handleInputChange}
@@ -96,7 +99,8 @@ export default function ContactDoctor() {
             <div className="w-[50%] max-[991px]:w-full mb-4">
               <label className="block text-right mb-1 text-lg">تاريخ الكشف</label>
               <input
-                className="text-right w-full text-base p-2 border-blue-400 border-2 rounded-md outline-none transition-all focus:border-blue-300"
+                className="text-right w-full text-base p-2 border-2 rounded-md outline-none transition-all focus:border-transparent focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50"
+                style={{ borderImage: 'linear-gradient(to right, purple-400, pink-400) 1' }}
                 type="date"
                 name="date"
                 value={formData.date}
@@ -106,7 +110,8 @@ export default function ContactDoctor() {
             <div className="w-[50%] max-[991px]:w-full mb-4">
               <label className="block text-right mb-1 text-lg">الوقت</label>
               <select
-                className="text-right w-full text-base p-2 border-blue-400 border-2 rounded-md outline-none transition-all focus:border-blue-300"
+                className="text-right w-full text-base p-2 border-2 rounded-md outline-none transition-all focus:border-transparent focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50"
+                style={{ borderImage: 'linear-gradient(to right, purple-400, pink-400) 1' }}
                 name="time"
                 value={formData.time}
                 onChange={handleInputChange}
@@ -122,7 +127,8 @@ export default function ContactDoctor() {
           <div className="w-full mb-4 px-2">
             <label className="block text-right mb-1 text-lg">المزيد من البيانات</label>
             <textarea
-              className="min-h-[150px] text-right w-full text-base p-2 border-blue-400 border-2 rounded-md outline-none transition-all focus:border-blue-300"
+              className="min-h-[150px] text-right w-full text-base p-2 border-2 rounded-md outline-none transition-all focus:border-transparent focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50"
+              style={{ borderImage: 'linear-gradient(to right, purple-400, pink-400) 1' }}
               name="additionalInfo"
               value={formData.additionalInfo}
               onChange={handleInputChange}

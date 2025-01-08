@@ -24,13 +24,27 @@ export default function Header() {
 
       {/* القائمة في الشاشات الكبيرة */}
       <nav className="hidden md:flex flex-1 justify-center text-center">
-        <ul className="flex justify-center gap-8">
-          <li><a href="/contact" className="hover:text-purple-600 font-bold">اتصل بنا</a></li>
-          <li><a href="/about" className="hover:text-purple-600 font-bold">من نحن</a></li>
-          <li><a href="/services" className="hover:text-purple-600 font-bold">الخدمات</a></li>
-          <li><a href="/" className="hover:text-purple-600 font-bold">عيادات التجميل</a></li>
-        </ul>
-      </nav>
+  <ul className="flex justify-center gap-8">
+    <li className="relative group">
+      <a href="/contact" className="hover:text-purple-600 font-bold">اتصل بنا</a>
+      <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-purple-400 to-pink-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+    </li>
+    <li className="relative group">
+      <a href="/about" className="hover:text-purple-600 font-bold">من نحن</a>
+      <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-purple-400 to-pink-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+    </li>
+    <li className="relative group">
+      <a href="/services" className="hover:text-purple-600 font-bold">الخدمات</a>
+      <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-purple-400 to-pink-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+    </li>
+    <li className="relative group">
+      <a href="/" className="hover:text-purple-600 font-bold">عيادات التجميل</a>
+      <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-purple-400 to-pink-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+    </li>
+  </ul>
+</nav>
+
+
 
       {/* زر الحجز في الشاشات الكبيرة */}
       <div className="hidden md:flex md:justify-center md:items-center">

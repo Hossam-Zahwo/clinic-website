@@ -1,10 +1,8 @@
-// src/app/slider/page.js
 "use client";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-
 
 const SliderPage = () => {
   const images = [
@@ -16,19 +14,19 @@ const SliderPage = () => {
   ];
 
   return (
-    <div className="h-screen w-full">
+    <div className="h-96 w-full flex items-center justify-center border rounded-3xl">
       <Swiper
-        direction="vertical" // الحركة عمودية
+        direction="vertical"
         modules={[Autoplay, Pagination]}
-        autoplay={{ delay: 3000 }} // التبديل التلقائي كل 3 ثوانٍ
+        autoplay={{ delay: 3000 }}
         pagination={{ clickable: true }}
-        loop={true} // التكرار المستمر
-        className="h-full w-full"
+        loop={true}
+        className="h-full w-full shadow-lg rounded-3xl"
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
             <div
-              className="h-screen w-screen bg-cover bg-center"
+              className="h-screen w-screen bg-cover bg-center transition-transform duration-500 ease-in-out transform hover:scale-105"
               style={{ backgroundImage: `url(${image.src})` }}
               aria-label={image.alt}
             ></div>
