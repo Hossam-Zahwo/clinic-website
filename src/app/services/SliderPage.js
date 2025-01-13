@@ -14,7 +14,7 @@ const SliderPage = () => {
   ];
 
   return (
-    <div className="h-96 w-full flex items-center justify-center border rounded-3xl">
+    <div className="h-96 w-full  flex items-center justify-center border rounded-3xl">
       <Swiper
         direction="vertical"
         modules={[Autoplay, Pagination]}

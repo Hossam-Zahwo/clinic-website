@@ -104,7 +104,7 @@ export default function Header() {
 
       {/* القائمة والزر: تظهر فقط في الموبايل */}
       {menuOpen && (
-        <div className="absolute top-16 left-0 bg-gray-200 rounded-lg shadow-lg w-60 p-4 flex flex-col gap-4 md:hidden">
+        <div className=" top-16 left-0 fixed bg-gray-200 rounded-lg z-50 shadow-lg w-60 p-4 flex flex-col gap-4 md:hidden">
           <ul className="flex flex-col gap-4">
             <li>
               <a href="/contact" className="hover:text-purple-600 font-bold">
